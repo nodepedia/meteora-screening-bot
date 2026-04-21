@@ -18,7 +18,7 @@ Bot ini **bukan bagian dari Meridian**. Fokusnya hanya satu: **menyaring pool/to
 | `src/okx.js` | bundler / wash / suspicious |
 | `src/rugcheck.js` | anti-scam gate |
 | `src/screener.js` | loop screening utama |
-| `ecosystem.config.js` | PM2 config |
+| `ecosystem.config.cjs` | PM2 config |
 
 ## Cara Pakai
 
@@ -58,7 +58,7 @@ Bot ini **bukan bagian dari Meridian**. Fokusnya hanya satu: **menyaring pool/to
 |---|---|
 | Sekali jalan | `npm run once` |
 | Loop biasa | `npm start` |
-| PM2 | `pm2 start ecosystem.config.js` |
+| PM2 | `pm2 start ecosystem.config.cjs` |
 
 ## PM2 Commands
 
@@ -138,6 +138,6 @@ Bot ini **bukan bagian dari Meridian**. Fokusnya hanya satu: **menyaring pool/to
 | Item | Note |
 |---|---|
 | Config | Semua parameter lewat `.env` |
-| PM2 | Sudah ada `ecosystem.config.js` |
+| PM2 | Sudah ada `ecosystem.config.cjs` |
 | Installer wizard | Sudah ada `install.sh` |
 | Telegram | Opsional |

@@ -205,7 +205,7 @@ fi
 echo
 echo "Restarting pm2 app: $APP_NAME"
 pm2 delete "$APP_NAME" >/dev/null 2>&1 || true
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 pm2 save
 
 echo
