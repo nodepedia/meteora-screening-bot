@@ -1,0 +1,22 @@
+{
+  "name": "meteora-screening-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone screening bot for Meteora pools using Meteora, Jupiter, OKX, and Rugcheck signals",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "once": "APP_RUN_ONCE=true node src/index.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:restart": "pm2 restart meteora-screening-bot",
+    "pm2:stop": "pm2 stop meteora-screening-bot",
+    "pm2:logs": "pm2 logs meteora-screening-bot"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
